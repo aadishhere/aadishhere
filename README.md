@@ -12,19 +12,15 @@ I'm a iOS Developer with a love for creating innovative and user-centric mobile 
 
 ### 🛠️ Tech Stack
 
-<p align="center">
+<p>
   <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" alt="swift"/>
   <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white" alt="swiftui"/>
-  <img src="https://img.shields.io/badge/ARKit-FFD700?style=for-the-badge&logo=apple&logoColor=black" alt="arkit"/>
   <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" alt="firebase"/>
   <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="sqlite"/>
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="figma"/>
-  <img src="https://img.shields.io/badge/Whimsical-9E54FF?style=for-the-badge&logo=Whimsical&logoColor=white" alt="whimsical"/>
-  <img src="https://img.shields.io/badge/WordPress-%2321759B.svg?style=for-the-badge&logo=WordPress&logoColor=white" alt="wordpress"/>
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="git"/>
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="github"/>
   <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" alt="xcode"/>
-  <img src="https://img.shields.io/badge/Apps%20Script-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="google apps script"/>
 </p>
 
 ### 🔗 Socials
