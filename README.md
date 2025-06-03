@@ -4,8 +4,8 @@
   </a>
 </div>
 
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="200"/>
+<div id="header">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="150"/>
   <h1>
     Hey there, I'm Aadish Jain
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
@@ -34,17 +34,49 @@
 
 ### 👨‍💻 About Me
 
-I'm a **iOS Developer** with a love for creating innovative and user-centric mobile applications.
+I'm a passionate iOS Developer with a love for creating innovative and user-centric mobile applications.
 
 ---
 
-Here's a fun snake game that is generated from my contribution graph!
+### 🐍 My GitHub Activity Snake
+
+Here's a fun visualization of my contribution graph!
 
 <div align="center">
   <a href="https://github.com/aadishhere">
-    <img src="https://raw.githubusercontent.com/platane/platane/output/github-snake.svg?user_name=aadishhere&color_snake=007AFF&color_dots=#d1d5db" alt="Snake Game">
+    <img src="https://raw.githubusercontent.com/platane/platane/output/github-snake.svg?user_name=aadishhere&color_snake=007AFF&color_dots=#d1d5db,#868686,#666666,#454545,#252525" alt="aadishhere's GitHub Contribution Snake">
   </a>
 </div>
+
+---
+
+### 💡 Tech Spotlight: Guess My Favorite!
+
+Let's see if you can guess some of the technologies I enjoy working with:
+
+<details>
+  <summary><strong>Q1:</strong> Is it a modern, powerful, and intuitive programming language for macOS, iOS, watchOS, and tvOS?</summary>
+  <br>
+  Absolutely! It's **Swift**! 🚀 My go-to for building sleek Apple ecosystem apps.
+</details>
+
+<details>
+  <summary><strong>Q2:</strong> Is it a declarative UI framework for building apps across all Apple platforms with less code?</summary>
+  <br>
+  You guessed it! It's **SwiftUI**! ✨ I love its simplicity and power.
+</details>
+
+<details>
+  <summary><strong>Q3:</strong> Is it a popular Backend-as-a-Service (BaaS) platform that helps build, run, and scale apps fast?</summary>
+  <br>
+  Spot on! It's **Firebase**! 🔥 Great for backend services, analytics, and more.
+</details>
+
+<details>
+  <summary><strong>Q4:</strong> Is it a technology that blends digital information with the user's environment in real time?</summary>
+  <br>
+  Correct! It's **ARKit**! 🕶️ Bringing augmented reality experiences to life is fascinating.
+</details>
 
 ---
 
