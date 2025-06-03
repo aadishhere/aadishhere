@@ -1,3 +1,9 @@
+</p>
+
+<p>
+  <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
+</p>
+
 <h1>
   Hey there, I'm Aadish Jain
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
@@ -26,9 +32,4 @@ I'm a iOS Developer with a love for creating innovative and user-centric mobile 
   <a href="https://www.linkedin.com/in/aadishhere" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://reddit.com/user/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=flat-square&logo=Reddit&logoColor=white" alt="Reddit"></a>
   <a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-</p>
-
-<p>
-  <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
-</p>
 
