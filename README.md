@@ -7,26 +7,7 @@
   </h3>
 </div>
 
-<div>
-  <a href="https://www.linkedin.com/in/aadishhere" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://instagram.com/aadishhere" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram">
-  </a>
-  <a href="https://medium.com/@aadishhere" target="_blank">
-    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium">
-  </a>
-  <a href="https://quora.com/profile/aadishhere" target="_blank">
-    <img src="https://img.shields.io/badge/Quora-%23B92B27.svg?style=for-the-badge&logo=Quora&logoColor=white" alt="Quora">
-  </a>
-  <a href="https://reddit.com/user/aadishhere" target="_blank">
-    <img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" alt="Reddit">
-  </a>
-  <a href="mailto:aadishhere@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-</div>
+<div><a href="https://www.linkedin.com/in/aadishhere" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a><a href="https://instagram.com/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram"></a><a href="https://medium.com/@aadishhere" target="_blank"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium"></a><a href="https://quora.com/profile/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Quora-%23B92B27.svg?style=for-the-badge&logo=Quora&logoColor=white" alt="Quora"></a><a href="https://reddit.com/user/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" alt="Reddit"></a><a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a></div>
 
 ### 👨‍💻 About Me
 
