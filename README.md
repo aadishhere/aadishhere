@@ -1,8 +1,11 @@
-<div>
+<div align="center">
   <a href="https://github.com/aadishhere">
     <img src="https://visitcount.itsvg.in/api?id=aadishhere&icon=7&color=12" alt="Visitors">
   </a>
 </div>
+
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="200"/>
   <h1>
     Hey there, I'm Aadish Jain
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
@@ -35,21 +38,55 @@ I'm a **iOS Developer** with a love for creating innovative and user-centric mob
 
 ---
 
+Here's a fun snake game that is generated from my contribution graph!
+
+<div align="center">
+  <a href="https://github.com/aadishhere">
+    <img src="https://raw.githubusercontent.com/platane/platane/output/github-snake.svg?user_name=aadishhere&color_snake=007AFF&color_dots=#d1d5db" alt="Snake Game">
+  </a>
+</div>
+
+---
+
 ### 🛠️ My Tech Stack
 
 Here are some of the technologies I'm proficient in and enjoy working with:
 
-| **iOS & Apple** | **Frontend & Design** | **Backend & Databases** | **Tools & Platforms** |
-|---|---|---|---|
-| ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) | ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) | ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) |
-| ![SwiftUI](https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white) | ![Whimsical](https://img.shields.io/badge/Whimsical-9E54FF?style=for-the-badge&logo=Whimsical&logoColor=white) | ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) |
-| ![ARKit](https://img.shields.io/badge/ARKit-FFD700?style=for-the-badge&logo=apple&logoColor=black) | ![WordPress](https://img.shields.io/badge/WordPress-%2321759B.svg?style=for-the-badge&logo=WordPress&logoColor=white) | ![Google Apps Script](https://img.shields.io/badge/Apps%20Script-4285F4?style=for-the-badge&logo=google&logoColor=white) | ![Xcode](https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white) |
-
----
-
-### 📈 My GitHub Stats
-
-<div>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadishhere&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
-</div>
-
+<p align="center">
+  <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" alt="swift"/>
+  </a>
+  <a href="https://developer.apple.com/xcode/swiftui/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white" alt="swiftui"/>
+  </a>
+  <a href="https://developer.apple.com/augmented-reality/arkit/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/ARKit-FFD700?style=for-the-badge&logo=apple&logoColor=black" alt="arkit"/>
+  </a>
+  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" alt="firebase"/>
+  </a>
+  <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="sqlite"/>
+  </a>
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="figma"/>
+  </a>
+  <a href="https://whimsical.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Whimsical-9E54FF?style=for-the-badge&logo=Whimsical&logoColor=white" alt="whimsical"/>
+  </a>
+   <a href="https://wordpress.org" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/WordPress-%2321759B.svg?style=for-the-badge&logo=WordPress&logoColor=white" alt="wordpress"/>
+  </a>
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="git"/>
+  </a>
+  <a href="https://github.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="github"/>
+  </a>
+  <a href="https://developer.apple.com/xcode/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" alt="xcode"/>
+  </a>
+  <a href="https://www.google.com/script/start/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Apps%20Script-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="google apps script"/>
+  </a>
+</p>
