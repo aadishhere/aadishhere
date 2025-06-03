@@ -7,11 +7,9 @@
 </h3>
 
 ### 👨‍💻 About Me
-
 I'm a iOS Developer with a love for creating innovative and user-centric mobile applications.
 
 ### 🛠️ Tech Stack
-
 <p>
   <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" alt="swift"/>
   <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white" alt="swiftui"/>
@@ -24,24 +22,19 @@ I'm a iOS Developer with a love for creating innovative and user-centric mobile 
 </p>
 
 ### 🔗 Socials
-
 <p>
   <a href="https://www.linkedin.com/in/aadishhere" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://reddit.com/user/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=flat-square&logo=Reddit&logoColor=white" alt="Reddit"></a>
   <a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
----
-
 ### 🎮 Play My Snake Game!
-
 <details>
   <summary>Click to play!</summary>
   <br>
   <iframe src="https://aadishhere.github.io/game/" width="100%" height="400px" frameborder="0"></iframe>
 </details>
 
----
 <p>
   <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
 </p>
