@@ -28,13 +28,6 @@ I'm a iOS Developer with a love for creating innovative and user-centric mobile 
   <a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
-### 🎮 Play My Snake Game!
-<details>
-  <summary>Click to play!</summary>
-  <br>
-  <iframe src="https://aadishhere.github.io/game/" width="100%" height="400px" frameborder="0"></iframe>
-</details>
-
 <p>
   <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
 </p>
