@@ -2,9 +2,9 @@
   Hey there, I'm Aadish Jain
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>
-<h3>
+<h6>
   📍 Based in Indore, India
-</h3>
+</h6>
 
 ### 👨‍💻 About Me
 I'm a iOS Developer with a love for creating innovative and user-centric mobile applications.
