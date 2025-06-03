@@ -30,6 +30,5 @@ I'm a iOS Developer with a love for creating innovative and user-centric mobile 
 ### 🔗 Socials
 <p>
   <a href="https://www.linkedin.com/in/aadishhere" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://reddit.com/user/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=flat-square&logo=Reddit&logoColor=white" alt="Reddit"></a>
   <a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 
