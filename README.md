@@ -1,24 +1,16 @@
-<h1 align="center">
+<h1>
   Hey there, I'm Aadish Jain
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>
-<h3 align="center">
+<h3>
   📍 Based in Indore, India
 </h3>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
-</p>
-
----
-
 ### 👨‍💻 About Me
 
-I'm a passionate iOS Developer with a love for creating innovative and user-centric mobile applications.
+I'm a iOS Developer with a love for creating innovative and user-centric mobile applications.
 
----
-
-### 🛠️ My Tech Stack
+### 🛠️ Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" alt="swift"/>
@@ -35,15 +27,10 @@ I'm a passionate iOS Developer with a love for creating innovative and user-cent
   <img src="https://img.shields.io/badge/Apps%20Script-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="google apps script"/>
 </p>
 
----
+### 🔗 Socials
 
-### 🔗 Connect with Me
-
-<p align="center">
+<p>
   <a href="https://www.linkedin.com/in/aadishhere" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://instagram.com/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=Instagram&logoColor=white" alt="Instagram"></a>
-  <a href="https://medium.com/@aadishhere" target="_blank"><img src="https://img.shields.io/badge/Medium-12100E?style=flat-square&logo=medium&logoColor=white" alt="Medium"></a>
-  <a href="https://quora.com/profile/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Quora-%23B92B27.svg?style=flat-square&logo=Quora&logoColor=white" alt="Quora"></a>
   <a href="https://reddit.com/user/aadishhere" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=flat-square&logo=Reddit&logoColor=white" alt="Reddit"></a>
   <a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
@@ -59,5 +46,7 @@ I'm a passionate iOS Developer with a love for creating innovative and user-cent
 </details>
 
 ---
+<p>
+  <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
+</p>
 
-> 🌟 _“Let’s code something amazing together!”_ 🌟
