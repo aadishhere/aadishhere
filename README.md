@@ -1,11 +1,8 @@
-<div align="center">
+<div>
   <a href="https://github.com/aadishhere">
     <img src="https://visitcount.itsvg.in/api?id=aadishhere&icon=7&color=12" alt="Visitors">
   </a>
 </div>
-
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm50Z3o3cnJlb3V3dDl0c3p1aWJseXVzc2NucHl2Z2Q5cnptdmV2eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M9gbBd9hDx80izdYJ3/giphy.gif" width="100"/>
   <h1>
     Hey there, I'm Aadish Jain
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
@@ -34,12 +31,7 @@
 
 ### 👨‍💻 About Me
 
-I'm a passionate **iOS Developer** with a love for creating innovative and user-centric mobile applications. [cite: 2] My journey in tech is driven by a desire to build things that solve real-world problems, and I'm always excited to learn and work with new technologies. Here's a little more about me:
-
-- 🚀 I'm currently an **iOS Development Intern** at **Bluebex Software**. [cite: 4]
-- 💡 I have hands-on experience in building **3+ iOS apps** using Swift, SwiftUI, AI, and ARKit. [cite: 3]
-- 🎤 I'm a **2x Organizer** for **TEDxIPSA Indore** and a **Bestselling Author**.
-- 🎓 I'm pursuing a Bachelor of Computer Science and Engineering from IPS Academy, Indore.
+I'm a **iOS Developer** with a love for creating innovative and user-centric mobile applications.
 
 ---
 
@@ -55,25 +47,9 @@ Here are some of the technologies I'm proficient in and enjoy working with:
 
 ---
 
-### 🚀 My Projects
-
-I believe in learning by doing. Here are some of the projects I've built:
-
-| Project Name | Description | Tech Stack |
-|---|---|---|
-| **LearnIt (AI Study App)** | An AI-powered study application that leverages the ChatGPT API to generate quizzes and summaries from study materials, aiming to reduce study time. [cite: 8] | `Swift`, `OpenAI API`, `MVC` |
-| **Vision News (AR App)** | An augmented reality-based iOS app that digitizes traditional newspapers to enhance user interaction by 40% using ARKit. [cite: 10] | `SwiftUI`, `ARKit`, `Figma` |
-| **Inspark Website** | Developed and managed the official website for Inspark Technologies, and automated internal workflows using Google App Scripts and Sheets. [cite: 7] | `WordPress`, `Google Apps Script` |
-
----
-
 ### 📈 My GitHub Stats
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aadishhere&theme=radical&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats">
-  <br/>
-  <img src="https://nirzak-streak-stats.vercel.app/?user=aadishhere&theme=radical&hide_border=false" alt="GitHub Streak">
-  <br/>
+<div>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadishhere&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
 </div>
 
