@@ -1,13 +1,11 @@
-</p>
-
 <p>
   <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
 </p>
 
-<h1>
+<h2>
   Hey there, I'm Aadish Jain
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-</h1>
+</h2>
 <h6>
   📍 Based in Indore, India
 </h6>
