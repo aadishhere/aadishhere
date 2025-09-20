@@ -104,24 +104,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const themeIcon = document.querySelector('.theme-icon');
-    const body = document.body;
+    const htmlElement = document.documentElement;
 
     function setInitialTheme() {
         const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            body.classList.add('dark-mode');
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        } else {
-            body.classList.remove('dark-mode');
+        if (savedTheme === 'light') {
+            htmlElement.classList.remove('dark-mode');
             themeIcon.classList.remove('fa-sun');
             themeIcon.classList.add('fa-moon');
+        } else {
+            htmlElement.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
         }
     }
 
     themeIcon.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        const isDarkMode = body.classList.contains('dark-mode');
+        htmlElement.classList.toggle('dark-mode');
+        const isDarkMode = htmlElement.classList.contains('dark-mode');
         localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 
         if (isDarkMode) {
