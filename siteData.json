@@ -1,0 +1,57 @@
+{
+  "promoBanner": {
+    "isEnabled": true,
+    "content": "<strong>New Component Just Dropped!</strong> Check out the new Animated Tabs component now.",
+    "link": "/components/animated-tabs"
+  },
+  "navbar": {
+    "brand": {
+      "logoText": "A",
+      "name": "Aceternity UI"
+    },
+    "navLinks": [
+      { "text": "Components", "href": "/index.html", "isActive": true },
+      { "text": "Documentation", "href": "#", "isActive": false },
+      { "text": "Pricing", "href": "#", "isActive": false }
+    ],
+    "search": {
+      "isEnabled": true,
+      "placeholder": "Search components..."
+    }
+  },
+  "sidebar": {
+    "sections": [
+      {
+        "type": "installation",
+        "title": "Getting Started",
+        "links": [
+          { "text": "Installation", "href": "#" },
+          { "text": "CLI", "href": "#" }
+        ],
+        "cliVersion": "1.0.2"
+      },
+      {
+        "type": "componentList",
+        "title": "Components",
+        "components": [
+          { "name": "3D Card Effect", "slug": "3d-card-effect" },
+          { "name": "Animated Tabs", "slug": "animated-tabs" },
+          { "name": "Bento Grid", "slug": "bento-grid" },
+          { "name": "Evervault Card", "slug": "evervault-card" }
+        ]
+      }
+    ]
+  },
+  "homepage": {
+    "requestButton": {
+      "isEnabled": true,
+      "text": "Request a Component"
+    },
+    "componentsToShow": [
+      "3d-card-effect",
+      "animated-tabs",
+      "bento-grid",
+      "evervault-card"
+    ]
+  }
+}
