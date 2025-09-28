@@ -7,7 +7,7 @@
   "navbar": {
     "brand": {
       "logoText": "A",
-      "name": "Aceternity UI"
+      "name": "applify ui"
     },
     "navLinks": [
       { "text": "Components", "href": "/index.html", "isActive": true },
