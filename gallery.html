@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=460">
+    <title>Photo Gallery | Aadish Jain</title>
+    <meta name="description" content="Official photo gallery of Aadish Jain, Author and iOS Developer from Indore.">
+    
+    <link rel="icon" type="image/png" href="assets/favicon.webp">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EV56GP9RHL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EV56GP9RHL');
+    </script>
+
+    <style>
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery-header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding-bottom: 40px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 1 / 1; /* Square images for consistency */
+            background-color: var(--widget-bg-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .back-nav {
+            padding: 20px 0;
+        }
+        .back-link {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 16px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: var(--link-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        
+        <nav class="back-nav">
+            <a href="index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </nav>
+
+        <main class="widget-container" style="padding-top: 0;">
+            
+            <div class="gallery-header">
+                <h1>photographs</h1>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <div class="gallery-item">
+                    <img src="assets/aadish1 .JPG" alt="Aadish Jain" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish on coffee shop.jpg" alt="Aadish Jain Rider Profile" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish tedx2025.JPG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish with anand nahar.JPEG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish with archana singh.JPEG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish with ashu ghai and reema ghai.JPEG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish with bhavya gandhi.JPEG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish with ishan sharma.JPEG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/aadish with tanmay mandhan.JPEG" alt="Aadish Jain at TEDxIPSA" loading="lazy">
+                </div>
+
+                </div>
+
+            <div class="widget widget-2x4 announcement-widget">
+                <p class="announcement-text">
+                    For usage rights or high-resolution copies, please contact <a href="mailto:aadishhere@gmail.com" style="color: var(--link-color);">aadishhere@gmail.com</a>
+                </p>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-right">
+                    <p>© 2026 Aadish Jain</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const lenis = new Lenis()
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ImageGallery",
+          "name": "Aadish Jain Photo Gallery",
+          "description": "Official photographs of Aadish Jain, Writer and iOS Developer.",
+          "url": "https://www.aadishjain.com/gallery.html",
+          "author": { "@id": "https://www.aadishjain.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.aadishjain.com/#person",
+          "name": "Aadish Jain",
+          "url": "https://www.aadishjain.com",
+          "sameAs": [
+            "https://github.com/aadishhere",
+            "https://linkedin.com/in/aadishhere",
+            "https://instagram.com/aadishhere",
+            "https://www.amazon.in/stores/author/B0BV14D8KJ",
+            "https://www.goodreads.com/author/list/29745669.Aadish_Jain"
+          ],
+          "image": [
+            "https://www.aadishjain.com/assets/aadish1 .JPG",
+            "https://www.aadishjain.com/assets/aadish on coffee shop.jpg",
+            "https://www.aadishjain.com/assets/aadish tedx2025.JPG"
+            "https://www.aadishjain.com/assets/aadish with anand nahar.JPEG"
+            "https://www.aadishjain.com/assets/aadish with archana singh.JPEG"
+            "https://www.aadishjain.com/assets/aadish with ashu ghai and reema ghai.JPEG"
+            "https://www.aadishjain.com/assets/aadish with bhavya gandhi.JPEG"
+            "https://www.aadishjain.com/assets/aadish with ishan sharma.JPEG"
+            "https://www.aadishjain.com/assets/aadish with tanmay mandhan.JPEG"
+
+          ]
+        }
+      ]
+    }
+    </script>
+</body>
+</html>
