@@ -1,0 +1,425 @@
+/* ==========================================================================
+   🐰 Standalone Bunny Companion Stylesheet ("rabbit-logic/bunny.css")
+   Pure Companion Vitals: Food, Oxygen, Health, and Revival Notice
+   ========================================================================== */
+
+/* 1. Full-Page WebGL Overlay Canvas */
+#three-fullpage-rabbit-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* 2. Sleek Corner Capsule Pill Widget & Vitals Drawer */
+#bunny-corner-capsule {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10010;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    user-select: none;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* The Main Corner Pill (Collapsed View) */
+.bunny-capsule-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(13, 19, 33, 0.92);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 9999px;
+    padding: 7px 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.12);
+    backdrop-filter: blur(14px);
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bunny-capsule-pill:hover {
+    transform: translateY(-2px);
+    border-color: rgba(56, 189, 248, 0.6);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.25);
+}
+
+.bunny-status-orb {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 8px #10b981;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bunny-status-orb.sick {
+    background: #f97316;
+    box-shadow: 0 0 8px #f97316;
+}
+
+.bunny-status-orb.choking {
+    background: #ef4444;
+    box-shadow: 0 0 12px #ef4444;
+    animation: orbPanic 0.4s infinite alternate;
+}
+
+.bunny-status-orb.dead {
+    background: #ef4444;
+    box-shadow: 0 0 10px #ef4444;
+}
+
+@keyframes orbPanic {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    100% { transform: scale(1.4); opacity: 1; }
+}
+
+.bunny-capsule-icon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.bunny-capsule-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 105px;
+}
+
+.bunny-capsule-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.bunny-pill-badge {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 9999px;
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    letter-spacing: 0.3px;
+}
+
+.bunny-pill-badge.choking {
+    background: rgba(239, 68, 68, 0.25);
+    color: #f87171;
+    border-color: rgba(239, 68, 68, 0.6);
+}
+
+.bunny-pill-badge.dead {
+    background: rgba(100, 116, 139, 0.3);
+    color: #cbd5e1;
+    border-color: rgba(148, 163, 184, 0.4);
+}
+
+.bunny-capsule-subtitle {
+    font-size: 10px;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bunny-pill-feed-btn {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.bunny-pill-feed-btn:hover {
+    transform: scale(1.06);
+    filter: brightness(1.1);
+}
+
+.bunny-pill-revive-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    animation: reviveGlow 1.2s infinite alternate;
+}
+
+@keyframes reviveGlow {
+    0% { box-shadow: 0 0 6px rgba(239, 68, 68, 0.4); }
+    100% { box-shadow: 0 0 14px rgba(239, 68, 68, 0.85); }
+}
+
+.bunny-capsule-chevron {
+    font-size: 11px;
+    color: #64748b;
+    transition: transform 0.3s ease;
+}
+
+#bunny-corner-capsule.expanded .bunny-capsule-chevron {
+    transform: rotate(180deg);
+}
+
+/* 3. The Expandable Vitals Drawer */
+.bunny-drawer {
+    display: none;
+    width: 330px;
+    margin-bottom: 12px;
+    background: rgba(11, 17, 30, 0.96);
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65), 0 0 25px rgba(56, 189, 248, 0.15);
+    backdrop-filter: blur(18px);
+    animation: drawerSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#bunny-corner-capsule.expanded .bunny-drawer {
+    display: block;
+}
+
+@keyframes drawerSlideUp {
+    0% { opacity: 0; transform: translateY(14px) scale(0.96); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.bunny-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 12px;
+}
+
+.bunny-drawer-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.3px;
+}
+
+.bunny-drawer-close {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+.bunny-drawer-close:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Clean 2-Column Vitals Grid */
+.bunny-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.bunny-stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 9px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bunny-stat-label {
+    font-size: 9px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 4px;
+}
+
+.bunny-stat-val {
+    font-size: 15px;
+    font-weight: 800;
+    color: #f1f5f9;
+}
+
+.bunny-stat-meta {
+    font-size: 9px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+/* EKG Mini Wave in Drawer */
+.bunny-ekg-row {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+#capsule-ekg-canvas {
+    width: 140px;
+    height: 28px;
+    display: block;
+}
+
+.bunny-ekg-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bunny-ekg-spo2 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #38bdf8;
+    font-family: monospace;
+}
+
+.bunny-ekg-bpm {
+    font-size: 10px;
+    color: #94a3b8;
+    font-family: monospace;
+}
+
+/* Drawer Action Buttons & Revival Notice */
+.bunny-drawer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bunny-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.bunny-action-btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+.bunny-btn-feed-drawer {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    color: #ffffff;
+}
+
+/* Revival Emergency Notice Box */
+.bunny-death-notice-box {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bunny-death-notice-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #f87171;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bunny-death-notice-meta {
+    font-size: 10px;
+    color: #cbd5e1;
+    font-family: monospace;
+}
+
+.bunny-death-notice-desc {
+    font-size: 11px;
+    color: #94a3b8;
+    line-height: 1.35;
+}
+
+.bunny-btn-whatsapp-drawer {
+    background: #25d366;
+    color: #052e16;
+}
+
+.bunny-btn-email-drawer {
+    background: #38bdf8;
+    color: #082f49;
+}
+
+.bunny-btn-admin-revive {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px dashed #10b981;
+    color: #10b981;
+    font-size: 11px;
+}
+
+/* 4. Floating Hearts & Reactions */
+.rabbit-floating-heart {
+    position: fixed;
+    z-index: 10020;
+    font-size: 24px;
+    pointer-events: none;
+    animation: bunnyFloatUp 1.2s ease-out forwards;
+}
+
+@keyframes bunnyFloatUp {
+    0% { opacity: 1; transform: translateY(0) scale(0.8); }
+    50% { opacity: 1; transform: translateY(-30px) scale(1.15); }
+    100% { opacity: 0; transform: translateY(-60px) scale(1); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    #bunny-corner-capsule {
+        bottom: 16px;
+        right: 16px;
+    }
+    .bunny-drawer {
+        width: calc(100vw - 32px);
+    }
+}
+

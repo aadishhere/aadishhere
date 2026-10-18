@@ -1,0 +1,611 @@
+/* ==========================================================================
+   PM Interactive Lab & Simulator Styles
+   Gaming HUD, Interactive Dilemma Engine, RICE Matrix, A/B Testing
+   ========================================================================== */
+
+.pm-lab-section {
+    padding: 64px 0;
+    position: relative;
+}
+
+.pm-lab-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+.pm-lab-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background: var(--bg-surface-elevated);
+    padding: 6px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    max-width: 580px;
+    margin: 0 auto 36px;
+}
+
+.lab-tab-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.lab-tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.lab-tab-btn.active {
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-subtle);
+}
+
+.lab-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.lab-panel.active {
+    display: block;
+}
+
+/* ==========================================================================
+   Game 1: The PM Sprint Dilemma Simulator HUD
+   ========================================================================== */
+.game-container {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-hud {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 16px 20px;
+    margin-bottom: 28px;
+}
+
+.hud-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hud-metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.hud-metric-name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hud-metric-val {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.hud-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: rgba(148, 163, 184, 0.15);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+}
+
+.hud-bar-fill {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hud-bar-fill.delight { background: #38bdf8; }
+.hud-bar-fill.velocity { background: #10b981; }
+.hud-bar-fill.roi { background: #6366f1; }
+.hud-bar-fill.debt { background: #f43f5e; }
+
+/* Scenario Card */
+.scenario-card {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin-bottom: 24px;
+}
+
+.scenario-badge-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.scenario-badge {
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--brand-danger);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+}
+
+.scenario-counter {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+}
+
+.scenario-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+}
+
+.scenario-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Decisions Options Grid */
+.decisions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.decision-btn {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 16px 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+}
+
+.decision-btn:hover:not(:disabled) {
+    border-color: var(--brand-primary);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-sm);
+    background: var(--bg-surface-elevated);
+}
+
+.decision-letter {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    color: var(--brand-primary);
+    font-weight: 800;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.decision-content {
+    flex-grow: 1;
+}
+
+.decision-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.decision-hint {
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+/* Feedback Box (Revealed after choice) */
+.decision-feedback {
+    display: none;
+    margin-top: 20px;
+    padding: 18px 22px;
+    border-radius: var(--radius-lg);
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.feedback-impact-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.impact-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+}
+
+.impact-tag.pos { background: rgba(16, 185, 129, 0.15); color: var(--brand-success); }
+.impact-tag.neg { background: rgba(239, 68, 68, 0.15); color: var(--brand-danger); }
+
+.feedback-text {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.btn-next-scenario {
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    background: var(--brand-primary);
+    color: #ffffff;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-next-scenario:hover {
+    background: var(--brand-primary-light);
+}
+
+/* End Game Scorecard & Certificate */
+.game-scorecard {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.4s ease;
+}
+
+.scorecard-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--brand-success);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    margin-bottom: 16px;
+}
+
+.scorecard-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.scorecard-archetype {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--brand-primary);
+    margin-bottom: 16px;
+}
+
+.scorecard-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 580px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+}
+
+.scorecard-stats-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+}
+
+.scorecard-stat-num {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}
+
+.scorecard-stat-lbl {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+.scorecard-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* ==========================================================================
+   Tool 2: Interactive RICE Prioritization Sandbox
+   ========================================================================== */
+.rice-container {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+}
+
+.rice-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.rice-formula-pill {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--brand-primary);
+}
+
+.rice-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.rice-table th {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    letter-spacing: 0.05em;
+    padding: 8px 14px;
+    text-align: left;
+}
+
+.rice-row {
+    background: var(--bg-surface-elevated);
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-fast);
+}
+
+.rice-row td {
+    padding: 14px;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.rice-row td:first-child {
+    border-left: 1px solid var(--border-subtle);
+    border-top-left-radius: var(--radius-md);
+    border-bottom-left-radius: var(--radius-md);
+}
+
+.rice-row td:last-child {
+    border-right: 1px solid var(--border-subtle);
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+}
+
+.rice-rank-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 12px;
+    color: var(--text-primary);
+}
+
+.rice-feature-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.rice-feature-category {
+    font-size: 11px;
+    color: var(--text-tertiary);
+}
+
+.rice-slider-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rice-slider-val {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.rice-slider {
+    width: 100px;
+    accent-color: var(--brand-primary);
+    cursor: pointer;
+}
+
+.rice-score-badge {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--brand-primary);
+    background: rgba(99, 102, 241, 0.1);
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    display: inline-block;
+}
+
+/* ==========================================================================
+   Tool 3: A/B Testing & Funnel Impact Calculator
+   ========================================================================== */
+.ab-calc-container {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+}
+
+.ab-inputs-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ab-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ab-label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.ab-value-tag {
+    font-family: var(--font-mono);
+    color: var(--brand-primary);
+    font-weight: 700;
+}
+
+.ab-range-slider {
+    width: 100%;
+    accent-color: var(--brand-primary);
+    cursor: pointer;
+}
+
+.ab-results-column {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ab-stat-card {
+    margin-bottom: 16px;
+}
+
+.ab-stat-label {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.ab-stat-large {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--brand-success);
+    font-family: var(--font-mono);
+}
+
+.ab-stat-subtext {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.significance-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: var(--brand-success);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .game-hud {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ab-calc-container {
+        grid-template-columns: 1fr;
+    }
+    .scorecard-stats-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .pm-lab-tabs {
+        flex-direction: column;
+    }
+    .rice-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

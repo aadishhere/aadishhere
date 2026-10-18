@@ -1,0 +1,187 @@
+/* ==========================================================================
+   Three.js 3D Interactive World Styling
+   - 3D Character Viewport in Hero
+   - 3D Runner WebGL Game Canvas
+   - 3D Product Inspector (Watch & Visor)
+   ========================================================================== */
+
+/* Full-Page 3D Roaming Rabbit WebGL Canvas & Speech Bubble */
+#three-fullpage-rabbit-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+#three-rabbit-bubble {
+    position: fixed;
+    transform: translate(-50%, -100%) scale(0.9);
+    background: var(--bg-surface);
+    border: 1px solid var(--brand-primary);
+    border-radius: var(--radius-lg);
+    padding: 10px 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 10001;
+}
+
+#three-rabbit-bubble.visible {
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1);
+    pointer-events: auto;
+}
+
+#three-rabbit-bubble .bubble-arrow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid var(--bg-surface);
+}
+
+/* 2. 3D WebGL Runner Game Canvas */
+.runner-3d-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.runner-3d-viewport {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background: #090a0e;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.runner-3d-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(9, 10, 14, 0.88);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    z-index: 10;
+}
+
+.runner-3d-hud {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    z-index: 5;
+    background: rgba(17, 19, 24, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border-subtle);
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: #38bdf8;
+    pointer-events: none;
+}
+
+/* 3. 3D Product Inspector */
+.inspector-3d-section {
+    padding: 56px 0;
+}
+
+.inspector-3d-container {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.inspector-3d-viewport {
+    position: relative;
+    height: 380px;
+    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.12) 0%, rgba(9, 10, 14, 0.9) 100%);
+    cursor: grab;
+}
+
+.inspector-3d-viewport:active {
+    cursor: grabbing;
+}
+
+.inspector-controls-bar {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    background: rgba(17, 19, 24, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 4px 8px;
+    border-radius: var(--radius-pill);
+    z-index: 5;
+}
+
+.inspector-tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.inspector-tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.inspector-tab-btn.active {
+    background: var(--brand-primary);
+    color: #ffffff;
+}
+
+.inspector-details-panel {
+    padding: 32px;
+    border-left: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .inspector-3d-container {
+        grid-template-columns: 1fr;
+    }
+    .inspector-details-panel {
+        border-left: none;
+        border-top: 1px solid var(--border-subtle);
+    }
+}
+
+

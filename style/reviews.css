@@ -1,0 +1,120 @@
+/* Reviews Page Modern Styles */
+
+.review-page-wrapper {
+    max-width: 800px;
+    margin: 40px auto 80px;
+    padding: 0 24px;
+}
+
+.form-container {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 36px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+}
+
+.form-container h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.form-container p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    background-color: var(--bg-surface-elevated);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px var(--brand-glow);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--brand-primary);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.submit-btn:hover {
+    background: var(--brand-primary-light);
+    transform: translateY(-1px);
+}
+
+#reviews-container {
+    margin-top: 32px;
+}
+
+#reviews-container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.review-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+.review-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.review-card strong {
+    font-size: 13px;
+    color: var(--brand-primary);
+    font-weight: 700;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Builds | Aadish Jain</title>
+    <link rel="icon" type="image/png" href="assets/favicon.webp">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="rabbit-logic/bunny.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Three.js 3D Library & GLTF Loader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EV56GP9RHL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EV56GP9RHL');
+    </script>
+</head>
+
+<body>
+    <!-- Top Dynamic Island Hub -->
+    <div class="dynamic-island-wrapper">
+        <div class="dynamic-island" id="dynamic-island">
+            <div class="island-indicator">
+                <img src="assets/aadishjain.webp" alt="Aadish Jain" class="island-avatar">
+                <div class="island-pulse"></div>
+            </div>
+            <div class="island-text">
+                <span>Projects Archive</span>
+                <span class="island-badge">Engineering &amp; Product</span>
+            </div>
+            <a href="index.html" class="island-action-btn">
+                <span>Home</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="site-container nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-dot"></span>
+                <span>Aadish Jain</span>
+                <span class="brand-role">Product</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#overview" class="nav-link"><i class="fa-solid fa-compass"></i> Overview</a></li>
+                    <li><a href="index.html#case-studies" class="nav-link"><i class="fa-solid fa-file-lines"></i> PRDs &amp; Cases</a></li>
+                    <li><a href="index.html#pm-lab" class="nav-link"><i class="fa-solid fa-gamepad"></i> PM Lab</a></li>
+                    <li><a href="projects.html" class="nav-link active"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+                    <li><a href="reviews.html" class="nav-link"><i class="fa-solid fa-star"></i> Reviews</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right-controls">
+                <button class="control-icon-btn js-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+                <a href="https://linkedin.com/in/aadishhere" target="_blank" class="control-icon-btn" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/aadishhere" target="_blank" class="control-icon-btn" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="projects-container">
+        <div class="projects-header">
+            <div class="section-label">
+                <i class="fa-solid fa-code-branch"></i> Engineering &amp; Apps
+            </div>
+            <h1>Projects &amp; Technical Builds</h1>
+            <p>From native iOS mobile applications to full-stack platforms and open-source explorations.</p>
+        </div>
+
+        <div id="projects-grid">
+            <!-- Loaded dynamically from Firebase, with static fallback items -->
+            <div class="project-card">
+                <img src="assets/visionnews.webp" alt="VisionNews" class="project-thumbnail">
+                <div class="project-info">
+                    <h3 class="project-title">VisionNews for Apple Vision Pro</h3>
+                    <p class="project-description">A spatial computing news client featuring gaze-anchored depth widgets, 3D audio spheres, and zero-touch micro-pinch navigation.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">RealityKit</span>
+                        <span class="tech-tag">visionOS</span>
+                        <span class="tech-tag">Spatial UX</span>
+                    </div>
+                    <a href="index.html?doc=prd-visionnews" class="project-link-button">
+                        <i class="fa-solid fa-file-lines"></i> View Product Spec
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/bluebex.webp" alt="PulsePG" class="project-thumbnail">
+                <div class="project-info">
+                    <h3 class="project-title">PulsePG Coliving Operating System</h3>
+                    <p class="project-description">End-to-end PG management platform with automated UPI rent reconciliation, ticket dispatching, and dynamic billing for multi-property operators.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">B2B SaaS</span>
+                    </div>
+                    <a href="index.html?doc=prd-pulsepg" class="project-link-button">
+                        <i class="fa-solid fa-file-lines"></i> View PRD Document
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/learnit.webp" alt="LearnIt" class="project-thumbnail">
+                <div class="project-info">
+                    <h3 class="project-title">LearnIt — Micro-Learning iOS Companion</h3>
+                    <p class="project-description">Bite-sized skill mastery app utilizing spaced repetition algorithms, streak mechanics, and offline CoreData synchronization.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">CoreData</span>
+                        <span class="tech-tag">Gamification</span>
+                        <span class="tech-tag">UX Design</span>
+                    </div>
+                    <a href="https://github.com/aadishhere" target="_blank" class="project-link-button">
+                        <i class="fa-brands fa-github"></i> View Source
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-container footer-inner">
+            <div class="footer-copy">
+                &copy; 2026 Aadish Jain &bull; Product Manager // Former Software Engineer
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="reviews.html" class="footer-link">Reviews</a>
+                <a href="https://linkedin.com/in/aadishhere" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="mailto:aadishhere@gmail.com" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/projects.js" type="module"></script>
+</body>
+
+</html>

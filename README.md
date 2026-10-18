@@ -1,31 +1,41 @@
-<p>
-  <img src="https://komarev.com/ghpvc/?username=aadishhere&style=flat-square&color=blue" alt="Profile views"/>
-</p>
+# Aadish Jain — Product Management Portfolio & Operating System
 
-<h2>
-  Hey there, I'm Aadish Jain
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-</h2>
-<h6>
-  📍 Based in Indore, India
-</h6>
+> **A technical Product Manager with deep iOS engineering roots**, bridging technical feasibility, user empathy, and commercial execution.
 
-### 👨‍💻 About Me
-I'm a iOS Developer with a love for creating innovative and user-centric mobile applications.
+📍 Based in Indore, India • Open to Relocate / Remote  
+🔗 Live Portfolio: [aadishjain.com](https://aadishjain.com)  
+💼 LinkedIn: [linkedin.com/in/aadishhere](https://linkedin.com/in/aadishhere)  
+✉️ Contact: [aadishhere@gmail.com](mailto:aadishhere@gmail.com)
 
-### 🛠️ Tech Stack
-<p>
-  <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" alt="swift"/>
-  <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white" alt="swiftui"/>
-  <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" alt="firebase"/>
-  <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="sqlite"/>
-  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="figma"/>
-  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="git"/>
-  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="github"/>
-  <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" alt="xcode"/>
-</p>
+---
 
-### 🔗 Socials
-<p>
-  <a href="https://www.linkedin.com/in/aadishhere" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:aadishhere@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+## 🚀 How to Run Locally
+
+You can run this portfolio locally on any Mac or Linux machine with one command:
+
+```bash
+./start.sh
+```
+
+Or manually:
+```bash
+python3 -m http.server 8000
+```
+Then open [http://localhost:8000](http://localhost:8000) in your browser.
+
+---
+
+## ✨ Features
+
+- **🎮 PM Interactive Lab**:
+  - **PM Sprint Dilemma Simulator**: Interactive 4-scenario simulation tracking User Delight, Dev Velocity, Business ROI, and Tech Debt with dynamic scorecard and PM Archetype certification.
+  - **RICE Feature Prioritization Engine**: Real-time slider calculations with dynamic roadmap reordering.
+  - **A/B Test Impact Simulator**: Statistical significance calculator with 95% confidence intervals and ARR lift projections.
+- **📄 Interactive PRD & Document Viewer**:
+  - **PulsePG Coliving OS**: In-depth B2B SaaS PRD with metrics (+42% collection velocity), schemas, and phased rollout.
+  - **VisionNews for Apple Vision Pro**: 0-to-1 spatial computing PRD with gaze-based interactions and 3D RealityKit specs.
+  - **Chronos Connected Horology**: Interactive 6-slide presentation deck with keyboard controls (`←` and `→`).
+- **⚡ The Tech-to-PM Bridge**: Explaining why technical product managers eliminate dev friction and accelerate sprint velocity.
+- **🏝️ Dynamic Island**: Floating status hub with expandable actions and live sprint indicator.
+- **⌘K Command Palette**: Fast global search across all documents, games, resume, and themes.
+- **🌓 Dark & Light Modes**: Seamless dual-theme support with persistent state.

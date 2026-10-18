@@ -1,0 +1,115 @@
+/* Projects Page Styles */
+
+.projects-container {
+    max-width: 1180px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.projects-header {
+    margin-bottom: 40px;
+}
+
+.projects-header h1 {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.projects-header p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.project-thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.project-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex-grow: 1;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.project-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tech-tag {
+    background: var(--bg-surface-elevated);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-subtle);
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.project-link-button {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all var(--transition-fast);
+    margin-top: auto;
+}
+
+.project-link-button:hover {
+    background-color: var(--brand-primary-light);
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Reviews &amp; Testimonials | Aadish Jain</title>
+    <link rel="icon" type="image/png" href="assets/favicon.webp">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reviews.css">
+    <link rel="stylesheet" href="rabbit-logic/bunny.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Three.js 3D Library & GLTF Loader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EV56GP9RHL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EV56GP9RHL');
+    </script>
+</head>
+
+<body>
+    <!-- Top Dynamic Island Hub -->
+    <div class="dynamic-island-wrapper">
+        <div class="dynamic-island" id="dynamic-island">
+            <div class="island-indicator">
+                <img src="assets/aadishjain.webp" alt="Aadish Jain" class="island-avatar">
+                <div class="island-pulse"></div>
+            </div>
+            <div class="island-text">
+                <span>Feedback Hub</span>
+                <span class="island-badge">Peer Reviews</span>
+            </div>
+            <a href="index.html" class="island-action-btn">
+                <span>Home</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="expanded-content" id="review-submitted-prompt" style="display: none;">
+                <p>Thank you for your valuable review!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="site-container nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-dot"></span>
+                <span>Aadish Jain</span>
+                <span class="brand-role">Product</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#overview" class="nav-link"><i class="fa-solid fa-compass"></i> Overview</a></li>
+                    <li><a href="index.html#case-studies" class="nav-link"><i class="fa-solid fa-file-lines"></i> PRDs &amp; Cases</a></li>
+                    <li><a href="index.html#pm-lab" class="nav-link"><i class="fa-solid fa-gamepad"></i> PM Lab</a></li>
+                    <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+                    <li><a href="reviews.html" class="nav-link active"><i class="fa-solid fa-star"></i> Reviews</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right-controls">
+                <button class="control-icon-btn js-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+                <a href="https://linkedin.com/in/aadishhere" target="_blank" class="control-icon-btn" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/aadishhere" target="_blank" class="control-icon-btn" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="review-page-wrapper">
+        <div class="form-container">
+            <div class="section-label">
+                <i class="fa-solid fa-comment-dots"></i> Feedback
+            </div>
+            <h1>Leave a Review or Note</h1>
+            <p>Whether you've collaborated with me on software, attended TEDx events, read my book, or explored my PRDs, I value your perspective.</p>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="name">Your Name &amp; Role / Company</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Sarah Connor, Senior PM at TechCorp" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email (Optional / Private)</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Review or Feedback</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Share your experience working with Aadish..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Submit Review
+                </button>
+                <p id="form-message"></p>
+            </form>
+        </div>
+
+        <div id="reviews-container">
+            <h2>Community &amp; Peer Testimonials</h2>
+            <!-- Dynamically populated from Firestore -->
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-container footer-inner">
+            <div class="footer-copy">
+                &copy; 2026 Aadish Jain &bull; Product Manager // Former Software Engineer
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="projects.html" class="footer-link">Projects</a>
+                <a href="https://linkedin.com/in/aadishhere" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="mailto:aadishhere@gmail.com" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/reviews.js" type="module"></script>
+</body>
+
+</html>
